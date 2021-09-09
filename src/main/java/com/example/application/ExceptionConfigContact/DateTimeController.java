@@ -1,4 +1,4 @@
-package com.example.application;
+package com.example.application.ExceptionConfigContact;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.PostMapping;

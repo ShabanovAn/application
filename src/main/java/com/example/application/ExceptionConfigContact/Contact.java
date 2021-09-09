@@ -1,4 +1,4 @@
-package com.example.application;
+package com.example.application.ExceptionConfigContact;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

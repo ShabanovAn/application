@@ -1,4 +1,4 @@
-package com.example.application;
+package com.example.application.ExceptionConfigContact;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

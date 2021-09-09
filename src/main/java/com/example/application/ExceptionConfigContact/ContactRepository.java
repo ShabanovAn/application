@@ -1,4 +1,4 @@
-package com.example.application;
+package com.example.application.ExceptionConfigContact;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
