@@ -26,10 +26,10 @@ public class BookController {
         return bookRepository.save(newBook);
     }
 
-//    @GetMapping("/books/{id}")
-//    Book getBook(@RequestParam Long id) {
-//        return bookRepository.findById(id)
-//                .orElseThrow(() -> new BookNotFoundException(id));
-//    }
+    @GetMapping("/books/{id}")
+    Book getBook(@RequestParam Long id) {
+        return bookRepository.findById(id)
+                .orElseThrow(() -> new BookNotFoundException("Книга с таким id не существует"));
+    }
 
 }
