@@ -7,12 +7,13 @@ import java.util.List;
 public class Main {
     //private static ArrayList<Object> list;
     public List<Number> list;
+
     public static void main(String[] args) {
-        int[] numbers = {10, 15, 22, 1, 56, 34, 45, 10, 15, 22, 56, 34, 45,99};
+        int[] numbers = {10, 15, 22, 1, 56, 34, 45, 10, 15, 22, 56, 34, 45, 99};
         System.out.println(searchInt(numbers));
         //System.out.println(Arrays.stream(numbers).max().getAsInt());
         Arrays.stream(numbers).distinct();
-      //
+        //
     }
 
     /*
@@ -27,11 +28,24 @@ public class Main {
         for (int i = 0; i < number.length; i++) {
             if (number[i] < min) {
                 min = number[i];
-            }else {
+            } else {
                 max = number[i];
             }
         }
-         return max;
-        }
+        return max;
     }
+
+
+    ///System.out.println(killShars("ABCdefabc", "be"));----Задача 2 первый параметр что передаеться 2 параметр что удалить
+    public static String killShars(String val, String chars) {
+        String result = val;
+        for (Object c : chars.toCharArray()) {
+            if (result.contains(String.valueOf(c).toLowerCase()) || result.contains(String.valueOf(c).toUpperCase())) {
+                result = result.replaceAll(String.valueOf(c).toLowerCase(), "");
+                result = result.replaceAll(String.valueOf(c).toUpperCase(), "");
+            }
+        }
+        return result;
+    }
+}
 
